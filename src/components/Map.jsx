@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react'
-import * as mapboxgl from 'mapbox-gl/esm'
+import mapboxgl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 function MapGL() {
