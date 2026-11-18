@@ -16,6 +16,11 @@ framework: React
 variant: Javascript
 linter: OxLint
 
+After create and add Mapbox GL, follow [this guide](https://ui.shadcn.com/docs/installation/vite#existing-vite-project) to add shadcn/ui.
+
+Follow [this shadcn/ui page](https://ui.shadcn.com/docs/javascript) because the project is set in Javascript.
+
+
 # NOTE
 
 After cloning the repository:
