@@ -1,9 +1,11 @@
 import './App.css'
 
+import MapGL from './components/Map'
+
 function App() {
   return (
     <>
-      <div id='map-container' />
+      <MapGL />
     </>
   )
 }
