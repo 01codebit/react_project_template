@@ -13,6 +13,7 @@ function MapGL() {
       center: [12.5, 42.00], // starting position [lng, lat]. Note that lat must be set between -90 and 90
       zoom: 6, // starting zoom
       pitch: 50,
+      // style: 'mapbox://styles/mapbox/standard-satellite',
       style: 'mapbox://styles/mapbox/standard',
       config: {
         basemap: {
@@ -20,6 +21,20 @@ function MapGL() {
         }
       }
     });
+
+    // Terrain ----------------------------------------------------------------------------
+/*
+    mapRef.current.on('style.load', () => {
+      mapRef.current.addSource('mapbox-dem', {
+        type: 'raster-dem',
+        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        tileSize: 512,
+        maxzoom: 14
+      });
+      mapRef.current.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
+    });
+*/
+    // ------------------------------------------------------------------------------------
 
     return () => {
       mapRef.current.remove()

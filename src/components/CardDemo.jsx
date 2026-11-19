@@ -11,9 +11,15 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
+import React, { useRef } from 'react';
+import Draggable from 'react-draggable';
+
 export function CardDemo() {
+  const nodeRef = useRef(null);
+
   return (
-    <Card className="w-full max-w-sm absolute top-0 left-0">
+    <Draggable bounds="parent" nodeRef={nodeRef}>
+    <Card className="w-full max-w-sm absolute top-0 left-0" ref={nodeRef}>
       <CardHeader>
         <CardTitle>Login to your account</CardTitle>
         <CardDescription>
@@ -59,5 +65,6 @@ export function CardDemo() {
         </Button>
       </CardFooter>
     </Card>
+    </Draggable>
   )
 }
